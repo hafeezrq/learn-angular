@@ -1,0 +1,7 @@
+p {
+  background-color: hsl(120, 62%, 83%);
+  padding: 30px;
+  margin: 10px auto;
+  text-align: center;
+  border: 1px solid green;
+}
