@@ -1,10 +1,19 @@
+.wraper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
 button {
   background-color: #1a76d2;
   border: 1px solid lch(70% 55 268 / 90%);
   border-radius: 5%;
   color: white;
+  width: fit-content;
   font-weight: 900;
   font-size: large;
+  grid-column: 2 / -1;
+  justify-self: end;
   display: grid;
   justify-items: center;
   align-items: center;
@@ -23,4 +32,27 @@ button[disabled] {
   justify-items: center;
   align-items: center;
   padding: 10px;
+}
+
+.serverNameInput {
+  padding: 10px;
+  font-weight: 700;
+}
+
+label {
+  justify-self: end;
+}
+
+.addServer {
+  grid-column: 1;
+  justify-self: center;
+}
+
+.addServer + p {
+  justify-self: self-start;
+}
+
+app-server {
+  grid-column: 1 / -1;
+  justify-self: self-start;
 }
