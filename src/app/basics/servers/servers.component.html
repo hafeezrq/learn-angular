@@ -1,3 +1,5 @@
-<button [disabled]="allowServerAdd">Add Server</button>
+<button [disabled]="!allowServerAdd">Add Server</button>
+<p>{{allowServerAdd}} (by String interpolation)</p>
+<p [innerHTML]="allowServerAdd"></p>(property binding)
 <app-server></app-server>
 <app-server></app-server>

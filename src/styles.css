@@ -29,8 +29,8 @@ html {
 }
 
 body {
-  min-height: calc(100vh - 20px);
-  margin: 10px;
+  min-height: calc(100vh - 10px);
+  margin: 5px;
   /* letter-spacing: -1px; */
 }
 

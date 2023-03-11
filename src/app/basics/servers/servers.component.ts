@@ -6,11 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./servers.component.css'],
 })
 export class ServersComponent implements OnInit {
-  allowServerAdd = true;
+  allowServerAdd = false;
 
   constructor() {
     setTimeout(() => {
-      this.allowServerAdd = false;
+      this.allowServerAdd = true;
     }, 2000);
   }
 
