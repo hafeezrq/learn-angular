@@ -1,0 +1,6 @@
+<hr>
+<h4>Assignmen 2</h4>
+<label>User Name:</label>
+<input type="text" [(ngModel)]="userName">
+<p>{{ userName }}</p>
+<button [disabled]="!userName" (click)="onUpdateUserName()">Reset User</button>

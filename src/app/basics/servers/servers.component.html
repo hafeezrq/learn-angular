@@ -1,16 +1,10 @@
 <div class="wrapper">
   <label class="serverNameInput">Enter Server Name: </label>
-  <input type="text" id="serverName" name="serverName" class="serverNameInput" (input)="onUpdateServerName($event)">
-  <input type="text" id="serverName" name="serverName" class="serverNameInput" [(ngModel)]="serverName">
-  <p>Server Name: {{ serverName }}</p>
+  <input type="text" class="serverNameInput" (input)="onUpdateServerName($event)">
+  <input type="text" class="serverNameInput" [(ngModel)]="serverName">
   <button [disabled]="!allowServerAdd" (click)="onServerCreate()">
     Add Server
   </button>
-  <div>
-    <p>{{allowServerAdd}} (by String interpolation)</p>
-    <p class="addServer" [innerHTML]="allowServerAdd"></p>
-    (property binding)
-  </div>
-  <p>{{ serverCreateStatus }}</p>
+  <p *ngIf="serverCreated">{{ serverCreateStatus }}</p>
   <app-server></app-server>
 </div>

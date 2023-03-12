@@ -37,7 +37,7 @@ button[disabled] {
   padding: 10px 0;
   font-weight: 700;
 }
-#serverName {
+input {
   padding: 10px;
   align-self: center;
 }
