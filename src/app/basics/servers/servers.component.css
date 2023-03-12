@@ -12,7 +12,6 @@ button {
   width: fit-content;
   font-weight: 900;
   font-size: large;
-  /* grid-column: 2 / -1; */
   justify-self: end;
   display: grid;
   justify-items: center;
