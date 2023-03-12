@@ -10,6 +10,10 @@ export class ServerComponent {
   serverId: number = 10;
   serverStatus: string = 'Offline';
 
+  constructor() {
+    this.serverStatus = Math.random() > 0.5 ? 'green' : 'red';
+  }
+
   getServerName() {
     return this.serverName;
   }
