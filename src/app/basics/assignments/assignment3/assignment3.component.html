@@ -1,0 +1,9 @@
+<hr>
+<p>assignment3</p>
+<button (click)="toggleDisplay()">Display Details</button>
+<p *ngIf="toggle">Lorem ipsum.</p>
+<p *ngFor="let logItem of clicks"
+  [ngStyle]="{backgroundColor: logItem >= 5 ? 'blue' : 'transparent'}"
+  [ngClass]="{'text-white': logItem >= 5}">
+  {{ logItem }}
+</p>
