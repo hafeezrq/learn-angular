@@ -11,10 +11,6 @@ export class Assignment3Component {
 
   toggleDisplay() {
     this.toggle = !this.toggle;
-    this.clicks.push(this.clicks.length + 1);
-    console.log(this.clicks);
+    this.clicks.push(new Date());
   }
-  // getColor(): any {
-  //   return this.clicks.length >= 5 ? 'blue' : 'transparent';
-  // }
 }
