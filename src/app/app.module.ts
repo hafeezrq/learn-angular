@@ -10,6 +10,12 @@ import { SuccessAlertComponent } from './basics/assignments/assignment1/success-
 import { WarningAlertComponent } from './basics/assignments/assignment1/warning-alert/warning-alert.component';
 import { UserComponent } from './basics/assignments/assignment2/user/user.component';
 import { Assignment3Component } from './basics/assignments/assignment3/assignment3.component';
+import { HeaderComponent } from './project/header/header.component';
+import { RecipesComponent } from './project/recipes/recipes.component';
+import { RecipeDetailComponent } from './project/recipes/recipe-detail/recipe-detail.component';
+import { RecipeListComponent } from './project/recipes/recipe-list/recipe-list.component';
+import { ShoppingListComponent } from './project/shopping-list/shopping-list.component';
+import { ShoppingEditComponent } from './project/shopping-list/shopping-edit/shopping-edit.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +26,12 @@ import { Assignment3Component } from './basics/assignments/assignment3/assignmen
     SuccessAlertComponent,
     UserComponent,
     Assignment3Component,
+    HeaderComponent,
+    RecipesComponent,
+    RecipeDetailComponent,
+    RecipeListComponent,
+    ShoppingListComponent,
+    ShoppingEditComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
