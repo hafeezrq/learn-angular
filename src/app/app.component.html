@@ -1,20 +1,40 @@
-<header>
-  <img src="../assets/img/logo-nav@2x.png" alt="Angular Logo" width="150" height="40" class="home">
-  <h1 class="learn">Learn and Practice The Angular</h1>
-</header>
-<aside class="links">
-  <p>Basics</p>
-</aside>
-<main class="contents">
-  <app-servers></app-servers>
-  <!-- <app-warning-alert></app-warning-alert>
-  <app-success-alert></app-success-alert> -->
-  <app-user></app-user>
-  <app-assignment3></app-assignment3>
-</main>
-<aside class="info">
-  <p>Some more information</p>
-</aside>
-<footer>
-  <p>Footer</p>
-</footer>
+<div class="container-fluid d-flex flex-column min-vh-100">
+  <div class="row">
+    <header class="py-5">
+      <img
+        src="../assets/img/logo-nav@2x.png"
+        alt="Angular Logo"
+        width="150"
+        height="40"
+        class="home"
+      />
+      <h1 class="learn">Learn and Practice The Angular</h1>
+    </header>
+  </div>
+  <div class="row flex-grow-1">
+    <aside class="col-md-2">
+      <ul>
+        <li>Basics</li>
+        <li>Project</li>
+      </ul>
+    </aside>
+    <main class="col-md-8">
+      <!--
+    <app-servers></app-servers>
+    <app-warning-alert></app-warning-alert>
+    <app-success-alert></app-success-alert> 
+    <app-user></app-user>
+    <app-assignment3></app-assignment3>
+    -->
+      <main-project></main-project>
+    </main>
+    <aside class="col-md-2">
+      <p>Some more information</p>
+    </aside>
+  </div>
+  <div class="row mt-auto">
+    <footer>
+      <p>Footer</p>
+    </footer>
+  </div>
+</div>

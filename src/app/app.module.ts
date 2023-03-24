@@ -16,6 +16,8 @@ import { RecipeDetailComponent } from './project/recipes/recipe-detail/recipe-de
 import { RecipeListComponent } from './project/recipes/recipe-list/recipe-list.component';
 import { ShoppingListComponent } from './project/shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './project/shopping-list/shopping-edit/shopping-edit.component';
+import { MainProjectComponent } from './project/main-project.component';
+import { RecipeItemComponent } from './project/recipes/recipe-list/recipe-item/recipe-item.component';
 
 @NgModule({
   declarations: [
@@ -26,12 +28,14 @@ import { ShoppingEditComponent } from './project/shopping-list/shopping-edit/sho
     SuccessAlertComponent,
     UserComponent,
     Assignment3Component,
+    MainProjectComponent,
     HeaderComponent,
     RecipesComponent,
     RecipeDetailComponent,
     RecipeListComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
+    RecipeItemComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
