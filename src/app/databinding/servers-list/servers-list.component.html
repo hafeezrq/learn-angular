@@ -1,0 +1,16 @@
+<div class="container h-100">
+  <p class="display-6 text-center bg-dark text-light mt-2 p-4">
+    Databing - Demo
+  </p>
+  <hr class="" />
+  <app-cockpit></app-cockpit>
+  <hr />
+  <div class="row">
+    <div class="col-12">
+      <app-server-element
+        *ngFor="let serverElement of serverElements"
+        [element]="serverElement"
+      ></app-server-element>
+    </div>
+  </div>
+</div>
