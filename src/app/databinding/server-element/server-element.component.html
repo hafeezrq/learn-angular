@@ -4,11 +4,12 @@
   </div>
   <div class="card-body">
     <!-- <h5 class="card-header"></h5> -->
-    <p class="card-text">
+    <!-- <p class="card-text">
       <strong *ngIf="element.type === 'server'" style="color: red">{{
         element.content
       }}</strong>
       <em *ngIf="element.type === 'blueprint'" style="color: blue">{{ element.content }}</em>
-    </p>
+    </p> -->
+    <ng-content></ng-content>
   </div>
 </div>
